@@ -1,4 +1,4 @@
-/* KapStrap
+/* Ground Zero
 
 Table of Contents
 _____________________________
@@ -13,12 +13,29 @@ _____________________________
   LIGHT: #e9ecef
   DARK: #212529
 
+-Base Styles
+  - Helpers
 - Grid
-- Base Styles
 - Typography
-- Links
+- Inputs
+- Buttons
+  - Hollow
+  - Filled
+- Alerts
+- Colors
+- Tables
 
 */
+
+/* BASE STYLES
+_____________________________*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html,
 body {
   background-color: #f9f9f9;
@@ -30,6 +47,9 @@ body {
     'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
 }
+
+/* HELPERS
+_____________________________*/
 
 .right {
   float: right;
@@ -51,6 +71,9 @@ body {
   border: 0;
 }
 
+/* GRID
+_____________________________*/
+
 .container {
   position: relative;
   width: 100%;
@@ -59,6 +82,10 @@ body {
   padding: 3rem 6rem;
   border-radius: 1rem;
   box-sizing: border-box;
+}
+
+.container a {
+  text-decoration: none;
 }
 
 .column {
@@ -172,7 +199,7 @@ body {
 .twelve-col {
   margin: 0 0.9rem;
   float: left;
-  width: 96%;
+  width: 100%;
   padding: 0.6rem;
   display: block;
   border-radius: 1rem;
@@ -189,6 +216,9 @@ body {
   display: table;
   clear: both;
 }
+
+/* TYPOGRAPHY
+_____________________________*/
 
 h1,
 h2,
@@ -257,16 +287,20 @@ code {
   font-family: monospace;
   text-align: left;
   font-size: 1.2rem;
+  white-space: pre-wrap;
 }
 
 /* For single, in-line code snippits */
 .single {
-  padding: 0.3rem 0.9rem;
+  padding: 0.1rem 0.3rem;
   font-family: monospace;
   background-color: #e9ecef;
   border-radius: 0.6rem;
   border: 1px solid #ddd;
 }
+
+/* INPUTS
+_____________________________*/
 
 label {
   margin: 0 0.9rem 1.5rem;
@@ -279,6 +313,7 @@ input {
   margin: 0 0.9rem;
   color: #383a42;
   background: transparent;
+  width: 100%;
   min-width: 80%;
   height: 3rem;
   padding: 0 3rem;
@@ -302,7 +337,7 @@ input:focus {
 textarea {
   box-sizing: border-box;
   width: 100%;
-  margin: 0 0.9rem;
+  margin: 0 0.9rem 1rem;
   color: #383a42;
   background: transparent;
   padding: 0.9rem 3rem;
@@ -335,9 +370,8 @@ i {
   padding: 0 1rem 0 0;
 }
 
-/*
-BUTTONS
-________________________________*/
+/* BUTTONS
+_____________________________*/
 
 .btn {
   padding: 0.9rem 2rem;
@@ -389,9 +423,12 @@ ________________________________*/
   padding: 0.3rem;
 }
 
-/*
-HOLLOW
-______________________________*/
+#docs {
+  background-color: #e9ecef;
+}
+
+/* HOLLOW
+_____________________________*/
 
 .btn-primary-hollow {
   background-color: transparent;
@@ -429,7 +466,8 @@ ______________________________*/
   border: 1px solid #c4183c;
 }
 
-/*FILLED*/
+/* FILLED
+_____________________________*/
 
 .btn-primary {
   background-color: #0067f4;
@@ -467,7 +505,8 @@ ______________________________*/
   border: none;
 }
 
-/* ALERTS */
+/* ALERTS
+_____________________________*/
 
 .alert {
   padding: 1.5rem;
@@ -483,8 +522,22 @@ ______________________________*/
   padding: 0 2rem;
 }
 
-.alert:hover {
-  filter: brightness(115%);
+.alert input {
+  display: none;
+}
+
+.alert input:checked ~ * {
+  animation-name: dismiss, hide;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: 0s, 100ms;
+}
+
+.alert .close {
+  float: right;
+  cursor: pointer;
 }
 
 .alert-success {
@@ -507,10 +560,11 @@ ______________________________*/
   color: #1e2127;
 }
 
+/* LANDING
+_____________________________*/
+
 #landing {
-  background: linear-gradient(180deg, rgba(64, 120, 242, 1) 0%, #f9f9f9 82%),
-    url(https://static.pexels.com/photos/6663/desk-white-black-header.jpg);
-  /*background: url('https://static.pexels.com/photos/245915/pexels-photo-245915.jpeg');*/
+  background: linear-gradient(180deg, rgba(64, 120, 242, 1) 0%, #f9f9f9 82%);
   background-size: cover;
   position: relative;
   height: 100vh;
@@ -518,7 +572,7 @@ ______________________________*/
 
 .landing {
   position: absolute;
-  bottom: 15%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -528,15 +582,16 @@ ______________________________*/
   font-weight: 500;
 }
 
-/* COLOR CIRCLES
-___________________________________________ */
+/* COLORS
+_____________________________*/
 
 .colors {
   position: relative;
   width: 100%;
   height: 16rem;
   border-radius: 0.6rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 25px rgba(40, 47, 60, 0.05),
+    0 20px 25px rgba(40, 47, 60, 0.05), 0 3px 4px rgba(40, 47, 60, 0.05);
 }
 
 .colors h6 {
@@ -598,4 +653,193 @@ ___________________________________________ */
 
 .dark-circle {
   background-color: #212529;
+}
+
+/* TABLE
+_____________________________*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(40, 47, 60, 0.05),
+    0 20px 25px rgba(40, 47, 60, 0.05), 0 3px 4px rgba(40, 47, 60, 0.05);
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 0.9rem;
+}
+
+table tr {
+  transition: all 0.3s ease 0s;
+}
+
+table tr:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+table tr:hover {
+  background-color: #5a6169;
+  color: #e9ecef;
+}
+
+table th {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: left;
+  color: #fff;
+  background-color: #212529;
+}
+
+tr.primary th {
+  background-color: #0067f4;
+}
+
+tr.secondary th {
+  background-color: #5a6169;
+}
+
+tr.success th {
+  background-color: #17c671;
+}
+
+tr.info th {
+  background-color: #00b8d8;
+}
+
+tr.warning th {
+  background-color: #ffb400;
+}
+
+tr.danger th {
+  background-color: #c4183c;
+}
+
+tr.light th {
+  background-color: #e9ecef;
+  color: #5a6169;
+}
+
+/* NAVIGATION
+_____________________________*/
+
+nav {
+  width: 100%;
+  background-color: #e9ecef;
+  height: 6rem;
+  position: relative;
+  transition: all 0.9s ease 0s;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+nav ul {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  list-style: none;
+  padding: 1rem;
+  transform: translateY(-30%);
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  float: right;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #e9ecef;
+}
+
+/* TOOLTIPS
+_____________________________*/
+
+.btn {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*TOP*/
+
+.top .tooltiptext {
+  margin-left: -60px;
+  bottom: 125%;
+  left: 50%;
+}
+
+.top .tooltiptext::after {
+  top: 100%;
+}
+
+/*BOTTOM*/
+
+.bottom .tooltiptext {
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.bottom .tooltiptext::after {
+  bottom: 100%;
+}
+
+/*LEFT*/
+
+.left .tooltiptext {
+  right: 75%;
+  margin-right: 60px;
+}
+
+.left .tooltiptext::after {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+}
+
+/*RIGHT*/
+
+.right .tooltiptext {
+  left: 75%;
+  margin-left: 60px;
+}
+
+.right .tooltiptext::after {
+  bottom: 100%;
+  right: 50%;
+  margin-left: -5px;
+  border-width: 5px;
 }

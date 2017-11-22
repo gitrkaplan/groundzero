@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <meta charset="utf-8" />
+  <title>Ground Zero</title>
+</head>
+
+<body>
+  <div id="landing">
+    <div class="landing container text-center">
+      <div class="row">
+        <div class="twelve-col">
+          <h1>Ground Zero</h1>
+          <p>A simple, modern CSS framework for web designers who want an elegant framework out of the box.</p>
+          <button class="btn btn-primary pill"><i class="fa fa-download fa-lg" aria-hidden="true"></i>Download Now</button>
+          <button class="btn btn-secondary-hollow pill"><i class="fa fa-book fa-lg" aria-hidden="true"></i>View Docs</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="twelve-col">
+        <p class="text-center">Ground Zero is a modern design CSS framework packed with common CSS components that is <strong>extremely lightweight</strong> and easy to use.</p>
+        <a class="github-button" href="https://github.com/gitrkaplan/groundzero" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star gitrkaplan/groundzero on GitHub">Star</a>
+      </div>
+    </div>
+  </div>
+  <div class="container"><a id="colors"><h4>COLORS</h4></a>
+    <div class="row">
+      <div class="three-col text-center">
+        <div class="colors">
+          <div class="circle primary-circle"></div>
+          <h6>Primary</h6>
+          <p><code>#0067f4</code></p>
+        </div>
+      </div>
+      <div class="three-col text-center">
+        <div class="colors">
+          <div class="circle secondary-circle"></div>
+          <h6>Secondary</h6>
+          <p><code>#5a6169</code></p>
+        </div>
+      </div>
+      <div class="three-col text-center">
+        <div class="colors">
+          <div class="circle success-circle"></div>
+          <h6>Success</h6>
+          <p><code>#17c671</code></p>
+        </div>
+      </div>
+      <div class="three-col text-center">
+        <div class="colors">
+          <div class="circle info-circle"></div>
+          <h6>Info</h6>
+          <p><code>#00b8d8</code></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="three-col text-center">
+        <div class="colors">
+          <div class="circle warning-circle"></div>
+          <h6>Warning</h6>
+          <p><code>#ffb400</code></p>
+        </div>
+      </div>
+      <div class="three-col text-center">
+        <div class="colors">
+          <div class="circle danger-circle"></div>
+          <h6>Danger</h6>
+          <p><code>#c4183c</code></p>
+        </div>
+      </div>
+      <div class="three-col text-center">
+        <div class="colors">
+          <div class="circle light-circle"></div>
+          <h6>Light</h6>
+          <p><code>#e9ecef</code></p>
+        </div>
+      </div>
+      <div class="three-col text-center">
+        <div class="colors">
+          <div class="circle dark-circle"></div>
+          <h6>Dark</h6>
+          <p><code>#212529</code></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container"><a id="grid"><h4>GRID</h4></a>
+    <div class="row">
+      <div class="twelve-col">
+        <h6>USAGE</h6>
+        <p>All columns must be used with a wrapping <code class="single">div class="container"</code> and within that container must be a
+        <br><code class="single">div class="row"</code>. Within that row can contain any number of columns equal to the twelve column grid system. Simply include the number of columns you would like to add followed by <code class="single">-col</code></p>
+        <p><strong>EXAMPLE:</strong></p>
+        <pre><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="twelve-col"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+    </div>
+  <div class="text-center">
+    <div class="row">
+      <div class="one-col border">one</div>
+      <div class="eleven-col border">eleven</div>
+    </div>
+    <div class="row">
+      <div class="two-col border">two</div>
+      <div class="ten-col border">ten</div>
+    </div>
+    <div class="row">
+      <div class="three-col border">three</div>
+      <div class="nine-col border">nine</div>
+    </div>
+    <div class="row">
+      <div class="four-col border">four</div>
+      <div class="eight-col border">eight</div>
+    </div>
+    <div class="row">
+      <div class="five-col border">five</div>
+      <div class="seven-col border">seven</div>
+    </div>
+    <div class="row">
+      <div class="six-col border">six</div>
+      <div class="six-col border">six</div>
+    </div>
+    <div class="row">
+      <div class="seven-col border">seven</div>
+      <div class="five-col border">five</div>
+    </div>
+    <div class="row">
+      <div class="eight-col border">eight</div>
+      <div class="four-col border">four</div>
+    </div>
+    <div class="row">
+      <div class="nine-col border">nine</div>
+      <div class="three-col border">three</div>
+    </div>
+    <div class="row">
+      <div class="ten-col border">ten</div>
+      <div class="two-col border">two</div>
+    </div>
+    <div class="row">
+      <div class="eleven-col border">eleven</div>
+      <div class="one-col border">one</div>
+    </div>
+    <div class="row">
+      <div class="twelve-col border">twelve</div>
+    </div>
+  </div>
+  </div>
+  <div class="container"><a id="typography"><h4>TYPOGRAPHY</h4></a>
+    <div class="row">
+      <div class="twelve-col">
+        <h6>USAGE</h6>
+        <p>Simply use the standard heading and paragraph tags to achieve the desired results.</p>
+        <p><strong>EXAMPLE:</strong></p>
+        <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;h2&gt;This is a sub heading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph of text wrapped within a paragraph tag.&lt;/p&gt;
+</code></pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve-col">
+        <table>
+          <tr class="light">
+            <th>Type</th>
+            <th>Example</th>
+            <th>Font</th>
+            <th>Font Size</th>
+            <th>Line Height</th>
+          </tr>
+          <tr>
+            <td>Heading 1</td>
+            <td><h1>AaBbCc</h1></td>
+            <td>Poppins Semibold</td>
+            <td>4rem</td>
+            <td>1.2rem</td>
+          </tr>
+          <tr>
+            <td>Heading 2</td>
+            <td><h2>AaBbCc</h2></td>
+            <td>Poppins Medium</td>
+            <td>3.6rem</td>
+            <td>1.25rem</td>
+          </tr>
+          <tr>
+            <td>Heading 3</td>
+            <td><h3>AaBbCc</h3></td>
+            <td>Poppins Medium</td>
+            <td>3rem</td>
+            <td>1.3rem</td>
+          </tr>
+          <tr>
+            <td>Heading 4</td>
+            <td><h4>AaBbCc</h4></td>
+            <td>Poppins Medium</td>
+            <td>2.4rem</td>
+            <td>1.35rem</td>
+          </tr>
+          <tr>
+            <td>Heading 5</td>
+            <td><h5>AaBbCc</h5></td>
+            <td>Poppins Medium</td>
+            <td>1.8rem</td>
+            <td>1.5rem</td>
+          </tr>
+          <tr>
+            <td>Heading 6</td>
+            <td><h6>AaBbCc</h6></td>
+            <td>Poppins Medium</td>
+            <td>1.5rem</td>
+            <td>1.6rem</td>
+          </tr>
+          <tr>
+            <td>Paragraph</td>
+            <td><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, dolores.</p></td>
+            <td>System UI</td>
+            <td>1rem</td>
+            <td>1.5rem</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="container"><a id="buttons"><h4>BUTTONS</h4></a>
+    <div class="row">
+      <div class="twelve-col"><h5>STANDARD</h5>
+        <h6>USAGE</h6>
+        <p>Use the standard <code class="single">&lt;button&gt;</code> element with the <code class="single">btn</code> class and any of the following class attributes to create a button.</p>
+        <p><strong>EXAMPLE:</strong></p>
+        <pre><code><strong>Hollow</strong>
+&lt;button class="btn btn-primary-hollow"&gt;Primary&lt;/button&gt;
+<br>
+<strong>Filled</strong>
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+</code></pre>
+        <button class="btn btn-primary-hollow">Primary</button>
+        <button class="btn btn-secondary-hollow">Secondary</button>
+        <button class="btn btn-success-hollow">Success</button>
+        <button class="btn btn-info-hollow">Info</button>
+        <button class="btn btn-warning-hollow">Warning</button>
+        <button class="btn btn-danger-hollow">Danger</button>
+        <br>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Danger</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve-col"><h5>SQUARE</h5>
+        <h6>USAGE</h6>
+        <p>Add the <code class="single">square</code> class to remove the rounded edges.</p>
+        <p><strong>EXAMPLE:</strong></p>
+        <pre><code><strong>Hollow</strong>
+&lt;button class="btn btn-primary-hollow square"&gt;Primary&lt;/button&gt;
+<br>
+<strong>Filled</strong>
+&lt;button class="btn btn-primary square"&gt;Primary&lt;/button&gt;
+</code></pre>
+        <button class="btn btn-primary-hollow square">primary</button>
+        <button class="btn btn-secondary-hollow square">secondary</button>
+        <button class="btn btn-success-hollow square">success</button>
+        <button class="btn btn-info-hollow square">info</button>
+        <button class="btn btn-warning-hollow square">warning</button>
+        <button class="btn btn-danger-hollow square">danger</button>
+        <br>
+        <button class="btn btn-primary square">primary</button>
+        <button class="btn btn-secondary square">secondary</button>
+        <button class="btn btn-success square">success</button>
+        <button class="btn btn-info square">info</button>
+        <button class="btn btn-warning square">warning</button>
+        <button class="btn btn-danger square">danger</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve-col"><h5>PILL</h5>
+        <h6>USAGE</h6>
+        <p>Add the <code class="single">pill</code> class to create a pill shaped button.</p>
+        <p><strong>EXAMPLE:</strong></p>
+        <pre><code><strong>Hollow</strong>
+&lt;button class="btn btn-primary-hollow pill"&gt;Primary&lt;/button&gt;
+<br>
+<strong>Filled</strong>
+&lt;button class="btn btn-primary pill"&gt;Primary&lt;/button&gt;
+</code></pre>
+        <button class="btn btn-primary-hollow pill">Primary</button>
+        <button class="btn btn-secondary-hollow pill">Secondary</button>
+        <button class="btn btn-success-hollow pill">Success</button>
+        <button class="btn btn-info-hollow pill">Info</button>
+        <button class="btn btn-warning-hollow pill">Warning</button>
+        <button class="btn btn-danger-hollow pill">Danger</button>
+        <br>
+        <button class="btn btn-primary pill">Primary</button>
+        <button class="btn btn-secondary pill">Secondary</button>
+        <button class="btn btn-success pill">Success</button>
+        <button class="btn btn-info pill">Info</button>
+        <button class="btn btn-warning pill">Warning</button>
+        <button class="btn btn-danger pill">Danger</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve-col"><h5>BUTTON WITH ICON</h5>
+        <h6>USAGE</h6>
+        <p>Add the icon of choice by using the<code class="single">&lt;i&gt;</code> tag inside of the <code class="single">&lt;button&gt;</code> tag.</p>
+        <p><strong>EXAMPLE:</strong></p>
+        <pre><code><strong>Hollow</strong>
+&lt;button class="btn btn-primary-hollow pill"&gt;&lt;i class="fa fa-download" aria-hidden="true"&gt;&lt;/i&gt;Download&lt;/button&gt;
+<br>
+<strong>Filled</strong>
+&lt;button class="btn btn-primary pill"&gt;&lt;i class="fa fa-download" aria-hidden="true"&gt;&lt;/i&gt;Download&lt;/button&gt;
+</code></pre>
+        <button class="btn btn-primary-hollow pill"><i class="fa fa-download" aria-hidden="true"></i>Download</button>
+        <button class="btn btn-secondary-hollow pill"><i class="fa fa-unlock-alt" aria-hidden="true"></i>Authorize</button>
+        <button class="btn btn-success-hollow pill"><i class="fa fa-check" aria-hidden="true"></i>Success</button>
+        <button class="btn btn-info-hollow pill"><i class="fa fa-envelope" aria-hidden="true"></i>Message</button>
+        <button class="btn btn-warning-hollow pill"><i class="fa fa-star" aria-hidden="true"></i>Favorite</button>
+        <button class="btn btn-danger-hollow pill"><i class="fa fa-times" aria-hidden="true"></i>Delete</button>
+        <br>
+        <button class="btn btn-primary pill"><i class="fa fa-download" aria-hidden="true"></i>Download</button>
+        <button class="btn btn-secondary pill"><i class="fa fa-unlock-alt" aria-hidden="true"></i>Authorize</button>
+        <button class="btn btn-success pill"><i class="fa fa-check" aria-hidden="true"></i>Success</button>
+        <button class="btn btn-info pill"><i class="fa fa-envelope" aria-hidden="true"></i>Message</button>
+        <button class="btn btn-warning pill"><i class="fa fa-star" aria-hidden="true"></i>Favorite</button>
+        <button class="btn btn-danger pill"><i class="fa fa-times" aria-hidden="true"></i>Delete</button>
+
+        <p><i>NOTE:</i>
+The icons being used in these examples are from <a href="http://fontawesome.io/">Font Awesome</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container"><a id="code"><h4>CODE</h4></a>
+    <div class="row">
+      <div class="twelve-col">
+        <h6>USAGE</h6>
+        <p>There are two different types of code that can be written. Inline code for defining a small snippet such as <code class="single">&lt;p&gt;Lorem ipsum dolor...&lt;/p&gt;</code> and blocks of code shown below.</p>
+        <p><strong>EXAMPLE:</strong></p>
+        <p>For both the inline code and code block, they will require the <code class="single">code</code> tag and require the class of <code class="single">single</code> .</p>
+        <p>For the block of code, it will require the <code class="single">pre</code> tag to be the parent of the <code class="single">code</code> tag without the class of <code class="single">single</code> .</p>
+        <pre><code><strong>Inline</strong>
+&lt;code class="single"&gt;inline code goes here&lt;/code&gt;
+<br>
+<strong>Code Block</strong>
+&lt;pre&gt;
+  &lt;code&gt;
+    const greet = (name) => {
+      console.log('Hi, ' + name)
+    }
+    greet('John Smith')
+    // => 'Hi, John Smith'
+  &lt;/code&gt;
+&lt;/pre&gt;
+</code></pre>
+      </div>
+    </div>
+  </div>
+  <div class="container"><a id="alerts"><h4>ALERTS</h4></a>
+<div class="row">
+  <div class="twelve-col">
+   <div class="alert alert-success">
+     <input type="checkbox" id="alert1"/>
+    <label class="close" title="close" for="alert1">
+     <i class="fa fa-times" aria-hidden="true"></i>
+   </label>
+     <strong>Well Done!</strong> You successfully read this important alert message.
+   </div>
+   <div class="alert alert-info">
+     <input type="checkbox" id="alert2"/>
+    <label class="close" title="close" for="alert2">
+     <i class="fa fa-times" aria-hidden="true"></i>
+   </label>
+     <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+   </div>
+   <div class="alert alert-warning">
+     <input type="checkbox" id="alert3"/>
+    <label class="close" title="close" for="alert3">
+     <i class="fa fa-times" aria-hidden="true"></i>
+   </label>
+     <strong>Warning!</strong> Better check yourself, you're not looking too good.
+   </div>
+   <div class="alert alert-danger">
+     <input type="checkbox" id="alert4"/>
+    <label class="close" title="close" for="alert4">
+     <i class="fa fa-times" aria-hidden="true"></i>
+   </label>
+     <strong>Oh snap!</strong> Change a few things up and try submitting again
+   </div>
+  </div>
+</div>
+  </div>
+  <div class="container"><a id="tooltips"><h4>TOOLTIPS</h4></a>
+    <div class="row">
+      <div class="twelve-col">
+        <button class="btn btn-primary tooltip left"><span class="tooltiptext">This is a tooltip on the left.</span>
+        Tooltip Left</button>
+        <button class="btn btn-primary tooltip top"><span class="tooltiptext">This is a tooltip on the top.</span>
+        Tooltip Top</button>
+        <button class="btn btn-primary tooltip bottom"><span class="tooltiptext">This is a tooltip on the bottom.</span>
+        Tooltip Bottom</button>
+        <button class="btn btn-primary tooltip right"><span class="tooltiptext">This is a tooltip on the right.</span>
+        Tooltip Right</button>
+      </div>
+    </div>
+  </div>
+  <div class="container"><a id="inputs"><h4>INPUTS</h4></a>
+    <div class="row">
+      <div class="twelve-col">
+        <h5>Usage</h5>
+      </div>
+    </div>
+  <div class="row">
+    <div class="six-col no-border">
+      <label for="emailInput">Email Address</label>
+      <input type="email-address" placeholder="johndoe@example.com">
+    </div>
+    <div class="six-col no-border">
+      <label for="customerName">Your Name</label>
+      <input type="name" placeholder="John Doe">
+    </div>
+  </div>
+    <!-- <div class="row">
+      <div class="twelve-col no-border"> -->
+    <label for="message">Message</label>
+    <textarea type="text" placeholder="Enter your message here"></textarea>
+    <button class="btn btn-primary left">Submit</button>
+    <!-- </div>
+  </div> -->
+</div>
+<div class="container"><a id="tables"><h4>TABLES</h4></a>
+  <div class="row">
+    <div class="twelve-col">
+      <h6>USAGE</h6>
+      <p>Use the standard <code class="single">&lt;table&gt;</code> tag with the child <code class="single">&lt;tr&gt;</code> tag for a table row and nested <code class="single">&lt;th&gt;</code> tag for the table heading and a nested <code class="single">&lt;td&gt;</code> tag for the table data. On the <code class="single">&lt;td&gt;</code> tag, use <code class="single">&lt;class="primary"&gt;</code> or any other color class attributes to add a color to the table heading.</p>
+      <p><strong>EXAMPLE:</strong></p>
+      <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Company&lt;/th&gt;
+    &lt;th&gt;Contact&lt;/th&gt;
+    &lt;th&gt;Country&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
+    &lt;td&gt;Maria Anders&lt;/td&gt;
+    &lt;td&gt;Germany&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve-col">
+      <table>
+        <tr class="primary">
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Königlich Essen</td>
+          <td>Philip Cramer</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<nav class="fixed">
+  <ul>
+    <li><a href="#"><button id="docs" class="btn btn-secondary-hollow pill"><i class="fa fa-book fa-lg" aria-hidden="true"></i>View Docs</button></a></li>
+    <li><a href="#"><button class="btn btn-primary pill"><i class="fa fa-download fa-lg" aria-hidden="true"></i>Download Now</button></a></li>
+  </ul>
+</nav>
+<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
