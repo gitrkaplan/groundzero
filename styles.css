@@ -92,9 +92,49 @@ _____________________________*/
   margin: 0 0.9rem;
   float: left;
   box-sizing: border-box;
-  border-radius: 1rem;
   padding: 0.6rem;
-  border: 1px solid #383a42;
+}
+
+@media (max-width: 768px) {
+  /*.column,
+  .one-col,
+  .two-col,
+  .three-col,
+  .four-col,
+  .five-col,
+  .six-col,
+  .seven-col,
+  .eight-col,
+  .nine-col,
+  .ten-col,
+  .eleven-col,
+  .twelve-col {
+    width: 100% !important;
+    margin: 1rem 0;
+  }*/
+
+  body {
+    width: 100vw;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  td,
+  th {
+    border-collapse: collapse;
+  }
 }
 
 .one-col {
@@ -316,7 +356,7 @@ input {
   width: 100%;
   min-width: 80%;
   height: 3rem;
-  padding: 0 3rem;
+  padding: 0 0 0 1rem;
   border-radius: 0.6rem;
   border: 1px solid #383a42;
   outline: none;
