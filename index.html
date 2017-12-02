@@ -19,7 +19,7 @@
           <h1>Ground Zero</h1>
           <p>A simple, modern CSS framework for web designers who want an elegant framework out of the box.</p>
           <a target="_blank" href="https://www.github.com/gitrkaplan/groundzero"><button class="btn btn-primary pill"><i class="fa fa-download fa-lg" aria-hidden="true"></i>Download Now</button></a>
-          <a target="_blank" href="https://www.github.com/gitrkaplan/groundzero"><button class="btn btn-secondary-hollow pill"><i class="fa fa-book fa-lg" aria-hidden="true"></i>View Docs</button></a>
+          <a target="_blank" href="https://www.github.com/gitrkaplan/groundzero"><button class="btn btn-light-hollow pill"><i class="fa fa-book fa-lg" aria-hidden="true"></i>View Docs</button></a>
         </div>
       </div>
     </div>
@@ -395,14 +395,26 @@ The icons being used in these examples are from <a href="http://fontawesome.io/"
 </div>
   </div>
   <div class="container"><a id="tooltips"><h4>TOOLTIPS</h4></a>
+    <h6>USAGE</h6>
+    <p>Use a tooltip if you are trying to inform the user of a specific action on hover. Within the button, it will require both the default <code class="single">tooltip</code> tag and a directional tag for where the tooltip should appear. Example: <code class="single">&lt;button class="btn tooltip top"&gt;</code>. Within the <code class="single">button</code> tag, the tooltip text will go with an <code class="single">span</code> element with the class of <code class="single">tooltiptext</code></p>
+    <p><strong>EXAMPLE:</strong></p>
+    <pre><code>&lt;button class="btn btn-primary tooltip left"&gt;&lt;span class="tooltiptext"&gt;This is a tooltip on the left.&lt;/span&gt;
+    Tooltip Left&lt;/button&gt;
+</code></pre>
     <div class="row">
-      <div class="twelve-col">
+      <div class="three-col">
         <button class="btn btn-primary tooltip left"><span class="tooltiptext">This is a tooltip on the left.</span>
         Tooltip Left</button>
+      </div>
+      <div class="three-col">
         <button class="btn btn-primary tooltip top"><span class="tooltiptext">This is a tooltip on the top.</span>
         Tooltip Top</button>
+      </div>
+      <div class="three-col">
         <button class="btn btn-primary tooltip bottom"><span class="tooltiptext">This is a tooltip on the bottom.</span>
         Tooltip Bottom</button>
+      </div>
+      <div class="three-col">
         <button class="btn btn-primary tooltip right"><span class="tooltiptext">This is a tooltip on the right.</span>
         Tooltip Right</button>
       </div>

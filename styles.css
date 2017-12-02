@@ -113,10 +113,6 @@ _____________________________*/
     margin: 1rem 0;
   }*/
 
-  body {
-    width: 100vw;
-  }
-
   .container {
     width: 100%;
     padding: 0 1rem;
@@ -127,13 +123,21 @@ _____________________________*/
   }
 
   table {
+    margin: auto;
+    display: block;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 
   td,
   th {
     border-collapse: collapse;
+  }
+
+  .fixed {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -506,6 +510,12 @@ _____________________________*/
   border: 1px solid #c4183c;
 }
 
+.btn-light-hollow {
+  background-color: transparent;
+  color: #e9ecef;
+  border: 1px solid #e9ecef;
+}
+
 /* FILLED
 _____________________________*/
 
@@ -604,7 +614,9 @@ _____________________________*/
 _____________________________*/
 
 #landing {
-  background: linear-gradient(180deg, rgba(64, 120, 242, 1) 0%, #f9f9f9 82%);
+  background: url('https://images.pexels.com/photos/558478/pexels-photo-558478.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb')
+    no-repeat top center fixed;
+  /*background: linear-gradient(180deg, rgba(64, 120, 242, 1) 0%, #f9f9f9 82%);*/
   background-size: cover;
   position: relative;
   height: 100vh;
@@ -620,6 +632,11 @@ _____________________________*/
 .landing h1 {
   font-size: 6rem;
   font-weight: 500;
+}
+
+.landing h1,
+.landing p {
+  color: #e1e1e1;
 }
 
 /* COLORS
@@ -800,7 +817,7 @@ nav li a {
 /* TOOLTIPS
 _____________________________*/
 
-.btn {
+.tooltip {
   position: relative;
 }
 
@@ -819,7 +836,6 @@ _____________________________*/
 }
 
 .tooltip .tooltiptext::after {
-  content: '';
   position: absolute;
   left: 50%;
   margin-left: -5px;
@@ -835,7 +851,7 @@ _____________________________*/
 /*TOP*/
 
 .top .tooltiptext {
-  margin-left: -60px;
+  margin-left: -5rem;
   bottom: 125%;
   left: 50%;
 }
@@ -849,7 +865,7 @@ _____________________________*/
 .bottom .tooltiptext {
   top: 125%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -5rem;
 }
 
 .bottom .tooltiptext::after {
@@ -860,26 +876,30 @@ _____________________________*/
 
 .left .tooltiptext {
   right: 75%;
-  margin-right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 3rem;
 }
 
 .left .tooltiptext::after {
-  bottom: 100%;
+  top: 100%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: -0.5rem;
+  border-width: 0.5rem;
 }
 
 /*RIGHT*/
 
 .right .tooltiptext {
   left: 75%;
-  margin-left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 3rem;
 }
 
 .right .tooltiptext::after {
   bottom: 100%;
   right: 50%;
-  margin-left: -5px;
-  border-width: 5px;
+  margin-left: -0.5rem;
+  border-width: 0.5rem;
 }
